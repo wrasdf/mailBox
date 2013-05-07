@@ -1,0 +1,16 @@
+@import "compass/css3";
+@import "compass/utilities";
+.wrapper {
+  background: #000;
+}
+
+header {
+  @include background-image(linear-gradient(white, #aaaaaa));
+  @include border-top-radius(25px);
+  height: 200px;
+}
+
+.container .search-bar input {
+  @include border-radius(25px);
+
+}
