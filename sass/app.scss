@@ -1,16 +1,33 @@
 @import "compass/css3";
 @import "compass/utilities";
+
 .wrapper {
   background: #000;
 }
 
 header {
   @include background-image(linear-gradient(white, #aaaaaa));
-  @include border-top-radius(25px);
-  height: 200px;
+  @include border-top-radius(7px);
+  height: 43px;
 }
 
-.container .search-bar input {
-  @include border-radius(25px);
+.container .search-bar {
+  position: relative;
+  @include background-image(linear-gradient(#aaaaaa, #ccc));
+  border-top: 1px #9a9b9c solid;
+  padding: 6px;
 
+  .icon-search {
+    position: absolute;
+    top: 12px;
+    left: 19px;
+  }
+
+  input {
+    @include box-sizing(border-box);
+    @include border-radius(15px);
+    height: 28px;
+    padding: 8px 8px 8px 34px;
+    width: 100%;
+  }
 }

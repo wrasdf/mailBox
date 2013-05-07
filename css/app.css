@@ -1,29 +1,52 @@
-/* line 3, ../sass/app.scss */
+/* line 4, ../sass/app.scss */
 .wrapper {
   background: #000;
 }
 
-/* line 7, ../sass/app.scss */
+/* line 8, ../sass/app.scss */
 header {
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #aaaaaa));
   background-image: -webkit-linear-gradient(#ffffff, #aaaaaa);
   background-image: -moz-linear-gradient(#ffffff, #aaaaaa);
   background-image: -o-linear-gradient(#ffffff, #aaaaaa);
   background-image: linear-gradient(#ffffff, #aaaaaa);
-  -moz-border-radius-topleft: 25px;
-  -webkit-border-top-left-radius: 25px;
-  border-top-left-radius: 25px;
-  -moz-border-radius-topright: 25px;
-  -webkit-border-top-right-radius: 25px;
-  border-top-right-radius: 25px;
-  height: 200px;
+  -moz-border-radius-topleft: 7px;
+  -webkit-border-top-left-radius: 7px;
+  border-top-left-radius: 7px;
+  -moz-border-radius-topright: 7px;
+  -webkit-border-top-right-radius: 7px;
+  border-top-right-radius: 7px;
+  height: 43px;
 }
 
-/* line 13, ../sass/app.scss */
+/* line 14, ../sass/app.scss */
+.container .search-bar {
+  position: relative;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #aaaaaa), color-stop(100%, #cccccc));
+  background-image: -webkit-linear-gradient(#aaaaaa, #cccccc);
+  background-image: -moz-linear-gradient(#aaaaaa, #cccccc);
+  background-image: -o-linear-gradient(#aaaaaa, #cccccc);
+  background-image: linear-gradient(#aaaaaa, #cccccc);
+  border-top: 1px #9a9b9c solid;
+  padding: 6px;
+}
+/* line 20, ../sass/app.scss */
+.container .search-bar .icon-search {
+  position: absolute;
+  top: 12px;
+  left: 19px;
+}
+/* line 26, ../sass/app.scss */
 .container .search-bar input {
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
-  border-radius: 25px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  height: 28px;
+  padding: 8px 8px 8px 34px;
+  width: 100%;
 }
