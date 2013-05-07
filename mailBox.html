@@ -2,41 +2,84 @@
 <html>
 <head>
     <title>Mail Box</title>
-    <link charset='utf-8' href='css/common.css' rel='stylesheet' type='text/css' />
-    <link charset='utf-8' href='css/app.css' rel='stylesheet' type='text/css' />
-    <link charset='utf-8' href='css/font-awesome.css' rel='stylesheet' type='text/css' />
+    <link charset='utf-8' href='css/common.css' rel='stylesheet' type='text/css'/>
+    <link charset='utf-8' href='css/app.css' rel='stylesheet' type='text/css'/>
+    <link charset='utf-8' href='css/font-awesome.css' rel='stylesheet' type='text/css'/>
 
+    <style>
+    </style>
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <div class="menu"></div>
-            <ul class="button-group">
-                <li class="later"></li>
-                <li class="inbox"></li>
-                <li class="archive"></li>
-            </ul>
-            <div class="button-new"></div>
-        </header>
-        <div class="container">
-            <section class="search-bar">
-                <i class="icon-search"></i>
-                <input type="text" placeholder="Search"/>
-            </section>
-            <ul class="mails">
-                <li class="mail-thumb">
-
-                </li>
-                <li class="mail-thumb"></li>
-                <li class="mail-thumb"></li>
-                <li class="mail-thumb"></li>
-            </ul>
-        </div>
-        <footer>
-            <div class="batch-control left"></div>
-            <div class="info"></div>
-            <div class="batch-control right"></div>
-        </footer>
+<div class="wrapper">
+    <header>
+        <div class="menu"></div>
+        <ul class="button-group">
+            <li class="later"></li>
+            <li class="inbox"></li>
+            <li class="archive"></li>
+        </ul>
+        <div class="button-new"></div>
+    </header>
+    <div class="container">
+        <section class="search-bar">
+            <i class="icon-search"></i>
+            <input type="text" placeholder="Search"/>
+        </section>
+        <ul class="mails">
+            <li class="mail-thumb">
+                <i class="star icon-star centered"></i>
+                <div class="mail-clip">
+                    <div class="conversation">
+                        <div class="time">3:50PM</div>
+                        <div class="contacts">Me, Xiao Peng</div>
+                        <div class="thread">
+                            <div class="subject-clip">Re: Spring Family Day</div>
+                            <div class="content-clip">
+                                Wa. Please make sure there are two lines of content so that
+                                there ....
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thread-number">30</div>
+                </div>
+                <div class="more">
+                    <i class="icon-chevron-right"></i>
+                </div>
+            </li>
+            <li class="mail-thumb">
+                <i class="star icon-star centered"></i>
+                <div class="mail-clip">
+                    <div class="conversation">
+                        <div class="time">4:50PM</div>
+                        <div class="contacts">Zhang San & 24 Others</div>
+                        <div class="thread">
+                            <div class="subject-clip">Re: Spring Family Day</div>
+                            <div class="content-clip">
+                                Wa. Please make sure there are two lines of content so that
+                                there ....
+                            </div>
+                        </div>
+                    </div>
+                    <div class="thread-number">30</div>
+                </div>
+                <div class="more">
+                    <i class="icon-chevron-right"></i>
+                </div>
+            </li>
+            <li class="mail-thumb"></li>
+            <li class="mail-thumb"></li>
+            <li class="mail-thumb"></li>
+        </ul>
     </div>
+    <footer>
+        <div class="batch-control left">
+            <i class="icon-pause"></i>
+        </div>
+        <div class="info">4</div>
+        <div class="batch-control right">
+            <i class="icon-pause"></i>
+        </div>
+    </footer>
+</div>
 </body>
 </html>
