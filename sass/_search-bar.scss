@@ -1,0 +1,23 @@
+@import "compass/css3";
+@import "compass/utilities";
+
+.search-bar {
+  position: relative;
+  @include background-image(linear-gradient(#dedede, #c0c2c4));
+  padding: 6px;
+
+  .icon-search {
+    position: absolute;
+    color: #b3b4b4;
+    top: 14px;
+    left: 19px;
+  }
+
+  input {
+    @include box-sizing(border-box);
+    @include border-radius(15px);
+    border: 1px #ccc solid;
+    padding: 7px 8px 7px 34px;
+    width: 100%;
+  }
+}

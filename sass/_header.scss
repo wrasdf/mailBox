@@ -1,0 +1,47 @@
+@import "compass/css3";
+@import "compass/utilities";
+
+$header-icon-color: #797a7a;
+$header-border-color: #b0b1b1;
+$header-icon-border: $header-border-color 1px solid;
+
+header {
+  @include background-image(linear-gradient(#fcfcfc, #d4d5d5));
+  @include border-top-radius(7px);
+  border-bottom: 1px #9a9b9c solid;
+  color: $header-icon-color;
+  padding: 8px;
+
+  .icon-reorder, .icon-edit {
+    @include border-radius(4px);
+    display: inline-block;
+    border: $header-icon-border;
+    padding: 5px 12px;
+  }
+  .icon-reorder{
+    float:left;
+  }
+  .icon-edit {
+    float: right;
+  }
+
+  text-align: center;
+
+  ul.button-group {
+    font-size: 0;
+    display: inline-block;
+    @include border-radius(25px);
+    border: $header-icon-border;
+    li {
+      font-size: 16px;
+      display: inline-block;
+      padding: 5px 20px;
+      border-left: $header-icon-border;
+    }
+
+    :first-child{
+      border-left: none;
+    }
+  }
+
+}
