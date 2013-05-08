@@ -1,26 +1,67 @@
-/* line 4, ../sass/app.scss */
+/* line 5, ../sass/app.scss */
 .wrapper {
   font-family: helvetica, arial, clean, sans-serif;
   background: #000;
 }
 
-/* line 9, ../sass/app.scss */
+/* line 10, ../sass/app.scss */
 header {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fcfcfc), color-stop(100%, #d5d5d5));
-  background-image: -webkit-linear-gradient(#fcfcfc, #d5d5d5);
-  background-image: -moz-linear-gradient(#fcfcfc, #d5d5d5);
-  background-image: -o-linear-gradient(#fcfcfc, #d5d5d5);
-  background-image: linear-gradient(#fcfcfc, #d5d5d5);
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fcfcfc), color-stop(100%, #d4d5d5));
+  background-image: -webkit-linear-gradient(#fcfcfc, #d4d5d5);
+  background-image: -moz-linear-gradient(#fcfcfc, #d4d5d5);
+  background-image: -o-linear-gradient(#fcfcfc, #d4d5d5);
+  background-image: linear-gradient(#fcfcfc, #d4d5d5);
   -moz-border-radius-topleft: 7px;
   -webkit-border-top-left-radius: 7px;
   border-top-left-radius: 7px;
   -moz-border-radius-topright: 7px;
   -webkit-border-top-right-radius: 7px;
   border-top-right-radius: 7px;
-  height: 43px;
+  color: #797a7a;
+  padding: 8px;
+  text-align: center;
+}
+/* line 16, ../sass/app.scss */
+header .icon-reorder, header .icon-edit {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  display: inline-block;
+  border: #b0b1b1 1px solid;
+  padding: 5px 12px;
+}
+/* line 22, ../sass/app.scss */
+header .icon-reorder {
+  float: left;
+}
+/* line 25, ../sass/app.scss */
+header .icon-edit {
+  float: right;
+}
+/* line 31, ../sass/app.scss */
+header ul.button-group {
+  display: inline-block;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  border: #b0b1b1 1px solid;
+}
+/* line 35, ../sass/app.scss */
+header ul.button-group li {
+  display: inline-block;
+  padding: 5px 20px;
+}
+/* line 40, ../sass/app.scss */
+header ul.button-group :nth-child(2) {
+  border-left: #b0b1b1 1px solid;
+  border-right: #b0b1b1 1px solid;
 }
 
-/* line 16, ../sass/app.scss */
+/* line 49, ../sass/app.scss */
 .container .search-bar {
   position: relative;
   background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dedede), color-stop(100%, #c0c2c4));
@@ -31,14 +72,14 @@ header {
   border-top: 1px #9a9b9c solid;
   padding: 6px;
 }
-/* line 22, ../sass/app.scss */
+/* line 55, ../sass/app.scss */
 .container .search-bar .icon-search {
   position: absolute;
   color: #b3b4b4;
   top: 12px;
   left: 19px;
 }
-/* line 29, ../sass/app.scss */
+/* line 62, ../sass/app.scss */
 .container .search-bar input {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -53,8 +94,8 @@ header {
   padding: 8px 8px 8px 34px;
   width: 100%;
 }
-/* line 39, ../sass/app.scss */
-.container .mail-thumb {
+/* line 72, ../sass/app.scss */
+.container li.mail-thumb {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-box;
@@ -67,25 +108,26 @@ header {
   -moz-box-align: center;
   -ms-box-align: center;
   box-align: center;
+  width: 100%;
   font-size: 12px;
   height: 86px;
   background-color: #fff;
   border-bottom: #c7c7c7 1px solid;
 }
-/* line 49, ../sass/app.scss */
-.container .mail-thumb .star.icon-star, .container .mail-thumb .more {
+/* line 83, ../sass/app.scss */
+.container li.mail-thumb .star.icon-star, .container li.mail-thumb .more {
   -webkit-box-flex: 0;
   -moz-box-flex: 0;
   -ms-box-flex: 0;
   box-flex: 0;
   padding: 0px 8px;
 }
-/* line 54, ../sass/app.scss */
-.container .mail-thumb .star.icon-star {
+/* line 88, ../sass/app.scss */
+.container li.mail-thumb .star.icon-star {
   color: #ffde47;
 }
-/* line 58, ../sass/app.scss */
-.container .mail-thumb .mail-clip {
+/* line 92, ../sass/app.scss */
+.container li.mail-thumb .mail-clip {
   line-height: 20px;
   position: relative;
   -webkit-box-flex: 1;
@@ -105,37 +147,37 @@ header {
   -ms-box-align: center;
   box-align: center;
 }
-/* line 67, ../sass/app.scss */
-.container .mail-thumb .mail-clip .contacts {
+/* line 101, ../sass/app.scss */
+.container li.mail-thumb .mail-clip .contacts {
   color: #3c3f40;
 }
-/* line 71, ../sass/app.scss */
-.container .mail-thumb .mail-clip .time {
+/* line 105, ../sass/app.scss */
+.container li.mail-thumb .mail-clip .time {
   position: absolute;
   right: 0;
   color: #888;
 }
-/* line 77, ../sass/app.scss */
-.container .mail-thumb .mail-clip .conversation {
+/* line 111, ../sass/app.scss */
+.container li.mail-thumb .mail-clip .conversation {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
   -ms-box-flex: 1;
   box-flex: 1;
 }
-/* line 80, ../sass/app.scss */
-.container .mail-thumb .mail-clip .conversation .thread {
+/* line 114, ../sass/app.scss */
+.container li.mail-thumb .mail-clip .conversation .thread {
   padding-right: 8px;
 }
-/* line 82, ../sass/app.scss */
-.container .mail-thumb .mail-clip .conversation .thread .subject-clip {
+/* line 116, ../sass/app.scss */
+.container li.mail-thumb .mail-clip .conversation .thread .subject-clip {
   color: #414445;
 }
-/* line 86, ../sass/app.scss */
-.container .mail-thumb .mail-clip .conversation .thread .content-clip {
+/* line 120, ../sass/app.scss */
+.container li.mail-thumb .mail-clip .conversation .thread .content-clip {
   color: #9e9e9e;
 }
-/* line 93, ../sass/app.scss */
-.container .mail-thumb .mail-clip .thread-number {
+/* line 126, ../sass/app.scss */
+.container li.mail-thumb .mail-clip .thread-number {
   -webkit-box-flex: 0;
   -moz-box-flex: 0;
   -ms-box-flex: 0;
@@ -150,7 +192,47 @@ header {
   color: #fff;
 }
 
-/* line 106, ../sass/app.scss */
+/* line 139, ../sass/app.scss */
 footer {
-  background-color: #fff;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -ms-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-box-align: center;
+  box-align: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
+  box-pack: center;
+  padding: 13px;
+  width: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fefefe), color-stop(100%, #f2f2f2));
+  background-image: -webkit-linear-gradient(#fefefe, #f2f2f2);
+  background-image: -moz-linear-gradient(#fefefe, #f2f2f2);
+  background-image: -o-linear-gradient(#fefefe, #f2f2f2);
+  background-image: linear-gradient(#fefefe, #f2f2f2);
+}
+/* line 150, ../sass/app.scss */
+footer .batch-control.left, footer .batch-control.right {
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -ms-box-flex: 0;
+  box-flex: 0;
+  padding: 0 8px;
+  color: #dadada;
+}
+/* line 156, ../sass/app.scss */
+footer .info {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+  text-align: center;
+  color: #8b9199;
 }
