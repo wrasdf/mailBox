@@ -21,6 +21,7 @@ footer {
 
   .info {
     @include box-flex(1);
+    display: block;
     text-align: center;
     color: #8b9199;
 

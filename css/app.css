@@ -232,6 +232,7 @@ footer .info {
   -moz-box-flex: 1;
   -ms-box-flex: 1;
   box-flex: 1;
+  display: block;
   text-align: center;
   color: #8b9199;
 }

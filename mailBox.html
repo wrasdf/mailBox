@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="mail">
 <head>
     <title>Mail Box</title>
-    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0"/>
+    <script src="./javascript/angular.js" type="text/javascript"></script>
+    <script src="./javascript/main.js" type="text/javascript"></script>
+
     <link charset='utf-8' href='css/common.css' rel='stylesheet' type='text/css'/>
     <link charset='utf-8' href='css/app.css' rel='stylesheet' type='text/css'/>
     <link charset='utf-8' href='css/font-awesome.css' rel='stylesheet' type='text/css'/>
 
-    <style>
-    </style>
 </head>
-<body>
+<body ng-controller="MailController">
+
 <div class="wrapper">
     <header class="clearfix">
         <i class="icon-reorder"></i>
@@ -27,61 +29,21 @@
     </section>
     <section class="container">
         <ul class="mails">
-            <li class="mail-thumb">
-                <i class="star icon-star centered"></i>
+            <li class="mail-thumb" ng-repeat="conversation in conversations">
+                <i class="star icon-star"></i>
+
                 <div class="mail-clip">
                     <div class="conversation">
-                        <div class="time">3:50PM</div>
-                        <div class="contacts">Me, YuanZhong</div>
+                        <div class="time">{{conversation.time}}</div>
+                        <div class="contacts">{{conversation.contacts}}</div>
                         <div class="thread">
-                            <div class="subject-clip">Farewell lunch tomorrow</div>
+                            <div class="subject-clip">{{conversation.subject}}</div>
                             <div class="content-clip">
-                                Wa. Please make sure there are two lines of content so that
-                                there ....
+                                {{conversation.content}}
                             </div>
                         </div>
                     </div>
-                    <div class="thread-number">30</div>
-                </div>
-                <div class="more">
-                    <i class="icon-chevron-right"></i>
-                </div>
-            </li>
-            <li class="mail-thumb">
-                <i class="star icon-star centered"></i>
-                <div class="mail-clip">
-                    <div class="conversation">
-                        <div class="time">3:50PM</div>
-                        <div class="contacts">Me, YuanZhong</div>
-                        <div class="thread">
-                            <div class="subject-clip">Farewell lunch tomorrow</div>
-                            <div class="content-clip">
-                                Wa. Please make sure there are two lines of content so that
-                                there ....
-                            </div>
-                        </div>
-                    </div>
-                    <div class="thread-number">30</div>
-                </div>
-                <div class="more">
-                    <i class="icon-chevron-right"></i>
-                </div>
-            </li>
-            <li class="mail-thumb">
-                <i class="star icon-star centered"></i>
-                <div class="mail-clip">
-                    <div class="conversation">
-                        <div class="time">3:50PM</div>
-                        <div class="contacts">Me, YuanZhong</div>
-                        <div class="thread">
-                            <div class="subject-clip">Farewell lunch tomorrow</div>
-                            <div class="content-clip">
-                                Wa. Please make sure there are two lines of content so that
-                                there ....
-                            </div>
-                        </div>
-                    </div>
-                    <div class="thread-number">30</div>
+                    <div class="thread-number">{{conversation.count}}</div>
                 </div>
                 <div class="more">
                     <i class="icon-chevron-right"></i>
@@ -90,13 +52,9 @@
         </ul>
     </section>
     <footer>
-        <div class="batch-control left">
-            <i class="icon-pause"></i>
-        </div>
-        <div class="info">4</div>
-        <div class="batch-control right">
-            <i class="icon-pause"></i>
-        </div>
+        <i class="batch-control left icon-pause"></i>
+        <span class="info">4</span>
+        <i class="batch-control right icon-pause"></i>
     </footer>
 </div>
 
