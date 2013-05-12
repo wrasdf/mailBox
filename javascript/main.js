@@ -1,14 +1,27 @@
 var app = angular.module("mail",[]);
 
+app.directive('mail', function(){
+  console.log(app.$scope);
+  return {
+    restrict: 'E',
+    scope: {
+      subject: "@",
+      content: "="
+    },
+    templateUrl: 'partials/mail.html',
+    replace: true
+  };
+
+});
+
 function MailController($scope){
   console.log("initializing mail controller");
 
   var conversation1 = {
     time: "3:50AM",
     contacts: "Me, Zhong Yuan",
-    subject: "Farewell Lunch",
-    content: "Wa. Please make sure there are two lines of content so that \
-              there changed....",
+    subject: "Call for service at any time.",
+    content: "Call for service at any time. Sorry to have kept you waiting....",
     count: 20
   };
 

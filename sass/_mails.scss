@@ -20,7 +20,7 @@
         color: #ffde47;
       }
 
-      .mail-clip {
+      .thread {
         line-height: 20px;
         position: relative;
         @include box-flex(1);
@@ -42,7 +42,7 @@
         .conversation {
           @include box-flex(1);
 
-          .thread {
+          .mail-clip {
             padding-right: 8px;
             .subject-clip {
               color: #414445;

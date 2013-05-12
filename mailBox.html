@@ -15,7 +15,7 @@
 
 <div class="wrapper">
     <header class="clearfix">
-        <i class="icon-reorder"></i>
+        <i class="menu icon-reorder"></i>
         <ul class="button-group">
             <li class="later icon-time"></li>
             <li class="inbox icon-inbox"></li>
@@ -32,16 +32,12 @@
             <li class="mail-thumb" ng-repeat="conversation in conversations">
                 <i class="star icon-star"></i>
 
-                <div class="mail-clip">
+                <div class="thread">
                     <div class="conversation">
                         <div class="time">{{conversation.time}}</div>
                         <div class="contacts">{{conversation.contacts}}</div>
-                        <div class="thread">
-                            <div class="subject-clip">{{conversation.subject}}</div>
-                            <div class="content-clip">
-                                {{conversation.content}}
-                            </div>
-                        </div>
+                        <mail subject="conversation.subject" content="conversation.content"/>
+
                     </div>
                     <div class="thread-number">{{conversation.count}}</div>
                 </div>
@@ -51,10 +47,10 @@
             </li>
         </ul>
     </section>
-    <footer>
-        <i class="batch-control left icon-pause"></i>
+    <footer class="clearfix">
+        <i class="batch-control left icon-pause pull-left"></i>
         <span class="info">4</span>
-        <i class="batch-control right icon-pause"></i>
+        <i class="batch-control right icon-pause pull-right"></i>
     </footer>
 </div>
 
