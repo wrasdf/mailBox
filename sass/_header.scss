@@ -12,16 +12,16 @@ header {
   color: $header-icon-color;
   padding: 8px;
 
-  .icon-reorder, .icon-edit {
+  .menu, .edit {
     @include border-radius(4px);
     display: inline-block;
     border: $header-icon-border;
     padding: 5px 12px;
   }
-  .icon-reorder{
+  .menu{
     float:left;
   }
-  .icon-edit {
+  .edit {
     float: right;
   }
 
@@ -32,6 +32,10 @@ header {
     display: inline-block;
     @include border-radius(25px);
     border: $header-icon-border;
+
+    /**
+     * Add left border, the left border of the first child will be removed late.
+     */
     li {
       font-size: 16px;
       display: inline-block;

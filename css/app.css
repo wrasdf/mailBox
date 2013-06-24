@@ -17,7 +17,7 @@ header {
   text-align: center;
 }
 /* line 15, ../sass/_header.scss */
-header .icon-reorder, header .icon-edit {
+header .menu, header .edit {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -28,11 +28,11 @@ header .icon-reorder, header .icon-edit {
   padding: 5px 12px;
 }
 /* line 21, ../sass/_header.scss */
-header .icon-reorder {
+header .menu {
   float: left;
 }
 /* line 24, ../sass/_header.scss */
-header .icon-edit {
+header .edit {
   float: right;
 }
 /* line 30, ../sass/_header.scss */
@@ -45,15 +45,18 @@ header ul.button-group {
   -o-border-radius: 25px;
   border-radius: 25px;
   border: #b0b1b1 1px solid;
+  /**
+   * Add left border, the left border of the first child will be removed late
+   */
 }
-/* line 35, ../sass/_header.scss */
+/* line 39, ../sass/_header.scss */
 header ul.button-group li {
   font-size: 16px;
   display: inline-block;
   padding: 5px 20px;
   border-left: #b0b1b1 1px solid;
 }
-/* line 42, ../sass/_header.scss */
+/* line 46, ../sass/_header.scss */
 header ul.button-group :first-child {
   border-left: none;
 }
